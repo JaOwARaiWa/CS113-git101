@@ -1,0 +1,31 @@
+สรุปเนื้อหาของ สัปดาห์ที่ 5
+เรื่อง Functions and Program Structure (ต่อ)
+6210450032 นายเกียรติกุล ทองอุดม (เฟริสท์)
+___________________________________________________________
+
+Scope Rules
+ตัวแปรที่ประกาศในฟังก์ชัน จะเป็น local variables
+ก็จะสามารถใช้ได้ในฟังก์ชันที่ประกาศไว้
+ตัวแปรที่ประกาศนอกฟังก์ชัน main ก็จะเป็น global variables
+หากตัวแปร local ชื่อซ้ำกับ global 
+การแก้ไขตัวแปร local ไม่มีผลกับตัวแปร global
+
+Storage Classes
+สามารถกำหนดให้ตัวแปรได้ 4 ลักษณะ auto, register, extern, memory
+storage class แบ่งเป็น 2 storage duration
+1. automatic storage duration 2. static storage duration
+
+Dynamic Storage Duration
+พื้นที่เก็บข้อมูลสำหรับ Dynamic Storage Duration
+สามารถถูก allocate ขึ้นมาได้ตลอด
+
+Seperate Compilation
+การคอมไพล์ในภาษา C สามารถ คอมไพล์แยกส่วนได้
+โดยการ gcc -c "ตามด้วยชื่อไฟล์".c จะสร้างไฟล์นั้นให้เป็นฟังก์ชันขึ้นมาใหม่
+gcc "ชื่อไฟล์ที่ 1".o "ชื่อไฟล์ที่ 2".o จะเป็นการลิงก์ 2 ไฟล์เข้าด้วยกัน
+
+Ramdom
+ฟังก์ชัน rand() เป็นการสุ่มเลขตั้งแต่ 0 ถึง RAND_MAX
+การเรียก srand() เป็นการสุ่ม seed number generator ก่อน rand() ได้
+
+___________________________________________________________
